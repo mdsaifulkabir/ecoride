@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Manager Dashboard | EcoRide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">Eco<span>Ride</span></a>
+
+    <nav class="nav-links">
+        <span id="loggedUser"></span>
+        <a href="#" id="logoutButton">Logout</a>
+    </nav>
+</header>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <h3>Station Manager Panel</h3>
+
+        <button class="active" data-page="overview">
+            Dashboard Overview
+        </button>
+
+        <button data-page="station">
+            Station Information
+        </button>
+
+        <button data-page="bikes">
+            Bike Status Management
+        </button>
+
+        <button data-page="availability">
+            Station Availability
+        </button>
+    </aside>
+
+    <main class="dashboard-content">
+        <div id="dashboardContent"></div>
+    </main>
+
+</div>
+
+<footer class="footer">EcoRide Station Manager Panel</footer>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/manager.js"></script>
+
+</body>
+</html>

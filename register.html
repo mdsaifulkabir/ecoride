@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | EcoRide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo">Eco<span>Ride</span></a>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<main class="auth-wrapper">
+    <section class="auth-card">
+
+        <h1>Create Account</h1>
+        <p class="muted">Select your account type to continue.</p>
+
+        <div id="formMessage"></div>
+
+        <form id="registerForm">
+
+            <div class="form-group">
+                <label for="registerRole">Register As</label>
+
+                <select id="registerRole" required>
+                    <option value="">Select Role</option>
+                    <option value="customer">Customer</option>
+                    <option value="manager">Station Manager</option>
+                    <option value="seller">Seller</option>
+                </select>
+            </div>
+
+            <div id="registrationFields"></div>
+
+            <button type="submit" id="registerButton" hidden>
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="muted" style="margin-top:18px;">
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+
+    </section>
+</main>
+
+<footer class="footer">EcoRide</footer>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>
